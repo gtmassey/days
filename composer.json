@@ -1,0 +1,53 @@
+{
+    "name": "gtmassey/days",
+    "description": "An extracted class that I wrote to help with managing days of the week as string objects. It does one thing and one thing only: convert a day of the week name to an abbreviation and back.",
+    "keywords": [
+        "gtmassey",
+        "helper class",
+        "days of week",
+        "string manipulation"
+    ],
+    "homepage": "https://github.com/gtmassey/days",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Garrett Massey",
+            "email": "contact@garrettmassey.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.3.2",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gtmassey\\Days\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gtmassey\\Days\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "format": "./vendor/bin/pint",
+        "pint": "./vendor/bin/pint",
+        "analyze": "./vendor/bin/phpstan analyse src tests --level 8"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
